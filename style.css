@@ -1,0 +1,86 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Banner */
+.banner {
+    background-color: rgb(0, 255, 179);
+    padding: 5px;
+    text-align: center;
+    color: #333;
+}
+
+/* Header */
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: #faeb60;
+    color: rgb(88, 68, 68);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Main Content */
+.main {
+    flex: 70%;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Side Content */
+.side {
+    flex: 30%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.imagenfalsa img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
